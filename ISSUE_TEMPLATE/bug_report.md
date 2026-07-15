@@ -1,6 +1,6 @@
 ---
-name: Human Issue template
-about: Issue creado manualmente por una persona.
+name: Human bug report template
+about: Bug report creado manualmente por una persona.
 title: "[BUG] "
 labels: bug
 assignees: guilledp
