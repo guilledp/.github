@@ -1,0 +1,39 @@
+name: Restrict auto-merge actors
+
+on:
+  pull_request_target:
+    types:
+      - auto_merge_enabled
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  disable-unauthorized-automerge:
+    if: >
+      github.actor != 'guilledp' &&
+      github.actor != 'github-copilot[bot]' &&
+      github.actor != 'copilot-swe-agent[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disable unauthorized auto-merge
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.graphql(
+              `mutation($pullRequestId: ID!) {
+                disablePullRequestAutoMerge(input: { pullRequestId: $pullRequestId }) {
+                  clientMutationId
+                }
+              }`,
+              { pullRequestId: context.payload.pull_request.node_id }
+            );
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: '🚫 Auto-merge has been disabled. Only @guilledp or GitHub Copilot can enable auto-merge in this repository.'
+            });
