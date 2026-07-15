@@ -7,19 +7,40 @@ assignees:
   - guilledp
 
 body:
-  - type: textarea
-    id: detected_behavior
+  - type: markdown
     attributes:
-      label: Comportamiento detectado
-      description: Describí qué sucede actualmente, cuándo ocurre y, opcionalmente, los pasos necesarios para reproducirlo.
+      value: |
+        # ¡Bienvenido, humano!
+
+        Completá los siguientes campos con información clara y concisa.
+
+  - type: dropdown
+    id: bug_type
+    attributes:
+      label: Tipo de bug
+      options:
+        - Funcional
+        - Visual
+        - Rendimiento
+        - Datos
+        - Seguridad
+        - Otro
     validations:
       required: true
 
-  - type: textarea
+  - type: input
+    id: detected_behavior
+    attributes:
+      label: Comportamiento detectado
+      description: Describí qué sucede actualmente.
+    validations:
+      required: true
+
+  - type: input
     id: expected_behavior
     attributes:
       label: Comportamiento esperado
-      description: Describí qué debería suceder en su lugar y cuál sería el resultado correcto.
+      description: Describí qué debería suceder.
     validations:
       required: true
 
