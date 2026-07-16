@@ -32,10 +32,10 @@ body:
       default: 2
       description: Seleccioná la prioridad que mejor represente el impacto del problema.
       options:
-        - 1 Danger / Risk
-        - 2 High priority
-        - 3 Medium priority
-        - 4 Low priority
+        - 🔴 Danger / Risk
+        - 🟠 High priority
+        - 🟡 Medium priority
+        - 🟢 Low priority
     validations:
       required: true
 
