@@ -12,7 +12,7 @@ body:
       value: |
         # 🪲 Bug report
         🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema. 
-        Este foormulario es solo para cargar errores o bugs del sistema. [✨ Crear una feature request](../new?template=feature_request.yml)
+        Este foormulario es solo para cargar errores o bugs del sistema. 
         
 
   - type: dropdown
