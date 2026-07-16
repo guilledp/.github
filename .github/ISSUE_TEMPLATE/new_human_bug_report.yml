@@ -10,10 +10,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## 🪲 Bug report
-        ## 🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema. 
+        ### 🪲 Bug report
+        #### 🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema. 
         
-        ### A tener en cuenta: 
+        #### A tener en cuenta: 
         
         * Este formulario solo permite cargar errores (bugs) 
         * Features, Questions e Ideas se cargan en otros formularios.
