@@ -11,42 +11,45 @@ body:
     attributes:
       value: |
         ### 🪲 Bug report
-        #### 🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema. 
-        
-        #### A tener en cuenta: 
-        
-        * Este formulario solo permite cargar errores (bugs) 
-        * Features, Questions e Ideas se cargan en otros formularios.
-        * Ser criterioso al momento de seleccionar la prioridad.
-        
-        **Gracias!**
+        #### 🤖👋 ¡Bienvenido, humano!
+
+        Este formulario permite registrar errores detectados durante el uso del sistema.
+
+        #### A tener en cuenta
+
+        - Este formulario solo permite cargar errores (bugs).
+        - Las features, preguntas e ideas se cargan en otros formularios.
+        - Sé criterioso al momento de seleccionar la prioridad.
+
+        **¡Gracias!**
+
         `Bip bop @ 6C 65 6F 20 6D 65 73 73 69`
-        
+
   - type: dropdown
     id: bug_priority
     attributes:
       label: Prioridad
-      description: Seleccioná la categoría que mejor represente el problema.
+      description: Seleccioná la prioridad que mejor represente el impacto del problema.
       options:
-        1 Danger / risk
-        2 High priority
-        3 Medium priority
-        4 Low priority
+        - 1 - Danger / Risk
+        - 2 - High priority
+        - 3 - Medium priority
+        - 4 - Low priority
     validations:
       required: true
-      
+
   - type: dropdown
     id: bug_type
     attributes:
       label: Tipo de bug
       description: Seleccioná la categoría que mejor represente el problema.
       options:
-        - Flujo/Links/UX
-        - Visual/Style/UI
-        - Performance/Delay
-        - Crash/Freeze 
-        - Almacenamiento/Datos
-        - Seguridad/Permisos
+        - Flujo / Links / UX
+        - Visual / Style / UI
+        - Performance / Delay
+        - Crash / Freeze
+        - Almacenamiento / Datos
+        - Seguridad / Permisos
         - Otros
     validations:
       required: true
