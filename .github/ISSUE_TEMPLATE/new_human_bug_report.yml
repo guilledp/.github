@@ -10,24 +10,36 @@ body:
   - type: markdown
     attributes:
       value: |
-        🪲 Bug Report
-        🤖 Bienvenido Humano!
+        # 🪲 Reporte de bug
+
+        ## 🤖 ¡Bienvenido, humano!
+
         Este formulario permite registrar errores detectados durante el uso del sistema.
-        Antes de enviarlo, describí claramente qué ocurrió, qué esperabas que ocurriera y cualquier información que pueda ayudar a reproducir el problema.
-        Una descripción precisa reduce el tiempo necesario para analizar, reproducir y resolver el bug.
+
+        Describí con claridad:
+
+        - **Qué ocurrió**
+        - **Qué esperabas que ocurriera**
+        - **Cómo puede reproducirse el problema**
+        - **Qué información adicional podría ayudar al diagnóstico**
+
+        > Una descripción precisa reduce considerablemente el tiempo necesario para analizar, reproducir y resolver el bug.
+
+        **Gracias por ayudarnos a mejorar el sistema.**
 
   - type: dropdown
     id: bug_type
     attributes:
       label: Tipo de bug
+      description: Seleccioná la categoría que mejor represente el problema.
       options:
-        - Flujo/enlaces/experiencia
-        - Visual/estilo/interfaz
-        - Rendimiento/velocidad/demora
-        - Congelamiento/bloqueo/cierre
-        - Datos/almacenamiento/base
-        - Seguridad/acceso/permisos
-        - Otro/misceláneo/desconocido
+        - Flujo, enlaces o experiencia de usuario
+        - Visual, estilo o interfaz
+        - Rendimiento, velocidad o demora
+        - Congelamiento, bloqueo o cierre
+        - Datos, almacenamiento o base de datos
+        - Seguridad, acceso o permisos
+        - Otro, misceláneo o desconocido
     validations:
       required: true
 
@@ -35,7 +47,8 @@ body:
     id: detected_behavior
     attributes:
       label: Comportamiento detectado
-      description: Describí qué sucede actualmente.
+      description: Describí brevemente qué sucede actualmente.
+      placeholder: Ejemplo: al guardar el formulario, la pantalla permanece cargando indefinidamente.
     validations:
       required: true
 
@@ -43,7 +56,8 @@ body:
     id: expected_behavior
     attributes:
       label: Comportamiento esperado
-      description: Describí qué debería suceder.
+      description: Describí brevemente qué debería suceder.
+      placeholder: Ejemplo: el formulario debería guardarse y mostrar una confirmación.
     validations:
       required: true
 
@@ -51,6 +65,14 @@ body:
     id: additional_information
     attributes:
       label: Información adicional
-      description: Agregá capturas, mensajes de error, registros u otros datos relevantes.
+      description: Agregá capturas, mensajes de error, registros, pasos para reproducir el problema u otros datos relevantes.
+      placeholder: |
+        Podés incluir:
+
+        - Pasos para reproducir el problema
+        - Capturas o grabaciones
+        - Mensajes de error
+        - Registros relevantes
+        - Navegador, dispositivo o entorno
     validations:
       required: false
