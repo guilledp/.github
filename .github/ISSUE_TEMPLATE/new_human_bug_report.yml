@@ -10,9 +10,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        # ¡Bienvenido, humano!
-
-        Completá los siguientes campos con información clara y concisa.
+        🪲 Bug Report
+        🤖 Bienvenido Humano!
+        Este formulario permite registrar errores detectados durante el uso del sistema.
+        Antes de enviarlo, describí claramente qué ocurrió, qué esperabas que ocurriera y cualquier información que pueda ayudar a reproducir el problema.
+        Una descripción precisa reduce el tiempo necesario para analizar, reproducir y resolver el bug.
 
   - type: dropdown
     id: bug_type
