@@ -1,4 +1,4 @@
-iname: Human bug report
+name: Human bug report
 description: Bug report creado manualmente por una persona.
 title: "[BUG] "
 labels:
@@ -19,13 +19,13 @@ body:
     attributes:
       label: Tipo de bug
       options:
-          - Workflow/UX/lin
-          - Visual/style/UI
-          - Performance/speed/lag
-          - Freeze/hang/crash
-          - Data/storage/database
-          - Security/access/permissions
-          - Other
+        - Flujo/enlaces/experiencia
+        - Visual/estilo/interfaz
+        - Rendimiento/velocidad/demora
+        - Congelamiento/bloqueo/cierre
+        - Datos/almacenamiento/base
+        - Seguridad/acceso/permisos
+        - Otro/misceláneo/desconocido
     validations:
       required: true
 
@@ -49,6 +49,6 @@ body:
     id: additional_information
     attributes:
       label: Información adicional
-      description: (Opcional) Agregá capturas, mensajes de error, registros u otros datos relevantes.
+      description: Agregá capturas, mensajes de error, registros u otros datos relevantes.
     validations:
       required: false
