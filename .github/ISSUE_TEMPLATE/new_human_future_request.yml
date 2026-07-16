@@ -1,0 +1,91 @@
+name: Feature request
+description: Solicitud de una nueva funcionalidad o mejora.
+title: "[FEATURE] "
+labels:
+  - enhancement
+assignees:
+  - guilledp
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🚀 Feature request
+        #### 🤖👋 ¡Bienvenido, humano!
+
+        Este formulario permite proponer nuevas funcionalidades o mejoras para el sistema.
+
+        #### A tener en cuenta
+
+        - Este formulario solo permite cargar funcionalidades y mejoras.
+        - Los errores deben cargarse mediante el formulario de bugs.
+        - Sé criterioso al momento de seleccionar la prioridad.
+        - Explicá claramente qué problema resolvería la propuesta.
+
+        **¡Gracias!**
+
+        `Bip bop @ 64 69 62 75 20 6D 61 72 74 69 6E 65 7A`
+
+  - type: dropdown
+    id: feature_priority
+    attributes:
+      label: Prioridad
+      description: Seleccioná la prioridad que mejor represente la importancia de la propuesta.
+      default: 2
+      options:
+        - 1 🔴 Critical
+        - 2 🟠 High priority
+        - 3 🟡 Medium priority
+        - 4 🟢 Low priority
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature_type
+    attributes:
+      label: Tipo de solicitud
+      description: Seleccioná la categoría que mejor represente la propuesta.
+      options:
+        - ✨ Nueva funcionalidad
+        - 🔄 Mejora de funcionalidad
+        - 🎨 Visual / Style / UI
+        - 🔀 Flujo / UX
+        - ⚡ Performance
+        - 🔌 Integración
+        - 🧩 Otros
+    validations:
+      required: true
+
+  - type: input
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: Describí brevemente la funcionalidad o mejora solicitada.
+      placeholder: "Ejemplo: permitir exportar los resultados en formato CSV."
+    validations:
+      required: true
+
+  - type: input
+    id: problem
+    attributes:
+      label: Problema que resuelve
+      description: Describí brevemente qué necesidad o problema resolvería.
+      placeholder: "Ejemplo: actualmente no es posible analizar los resultados fuera del sistema."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Información adicional
+      description: Agregá ejemplos, capturas, referencias o cualquier otro dato relevante.
+      placeholder: |
+        Podés incluir:
+
+        - Ejemplos de uso
+        - Capturas o diseños
+        - Comportamiento esperado
+        - Alternativas consideradas
+        - Referencias
+    validations:
+      required: false
