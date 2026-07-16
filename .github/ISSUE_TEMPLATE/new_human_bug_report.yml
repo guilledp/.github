@@ -23,18 +23,31 @@ body:
         `Bip bop @ 6C 65 6F 20 6D 65 73 73 69`
         
   - type: dropdown
+    id: bug_priority
+    attributes:
+      label: Tipo de bug
+      description: Seleccioná la categoría que mejor represente el problema.
+      options:
+        1 Danger / risk
+        2 High priority
+        3 Medium priority
+        4 Low priority
+    validations:
+      required: true
+      
+  - type: dropdown
     id: bug_type
     attributes:
       label: Tipo de bug
       description: Seleccioná la categoría que mejor represente el problema.
       options:
-        - Flujo, enlaces o experiencia de usuario
-        - Visual, estilo o interfaz
-        - Rendimiento, velocidad o demora
-        - Congelamiento, bloqueo o cierre
-        - Datos, almacenamiento o base de datos
-        - Seguridad, acceso o permisos
-        - Otro, misceláneo o desconocido
+        - Flujo/Links/UX
+        - Visual/Style/UI
+        - Performance/Delay
+        - Crash/Freeze 
+        - Almacenamiento/Datos
+        - Seguridad/Permisos
+        - Otros
     validations:
       required: true
 
