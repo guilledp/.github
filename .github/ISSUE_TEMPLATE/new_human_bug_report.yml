@@ -11,8 +11,9 @@ body:
     attributes:
       value: |
         # 🪲 Bug report
-        🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema.
-        > Una descripción precisa reduce considerablemente el tiempo necesario para analizar, reproducir y resolver el bug.
+        🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema. 
+        Este foormulario es solo para cargar errores o bugs del sistema. [✨ Crear una feature request](../new?template=feature_request.yml)
+        
 
   - type: dropdown
     id: bug_type
