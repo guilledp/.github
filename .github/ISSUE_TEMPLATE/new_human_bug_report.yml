@@ -48,7 +48,7 @@ body:
     attributes:
       label: Comportamiento detectado
       description: Describí brevemente qué sucede actualmente.
-      placeholder: Ejemplo: al guardar el formulario, la pantalla permanece cargando indefinidamente.
+      placeholder: "Ejemplo: al guardar el formulario, la pantalla permanece cargando indefinidamente."
     validations:
       required: true
 
@@ -57,7 +57,7 @@ body:
     attributes:
       label: Comportamiento esperado
       description: Describí brevemente qué debería suceder.
-      placeholder: Ejemplo: el formulario debería guardarse y mostrar una confirmación.
+      placeholder: "Ejemplo: el formulario debería guardarse y mostrar una confirmación."
     validations:
       required: true
 
