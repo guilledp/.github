@@ -10,22 +10,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 🪲 Reporte de bug
-
-        ## 🤖 ¡Bienvenido, humano!
-
-        Este formulario permite registrar errores detectados durante el uso del sistema.
-
-        Describí con claridad:
-
-        - **Qué ocurrió**
-        - **Qué esperabas que ocurriera**
-        - **Cómo puede reproducirse el problema**
-        - **Qué información adicional podría ayudar al diagnóstico**
-
+        # 🪲 Bug report
+        🤖👋 Bienvenido humano !! Este formulario permite registrar errores detectados durante el uso del sistema.
         > Una descripción precisa reduce considerablemente el tiempo necesario para analizar, reproducir y resolver el bug.
-
-        **Gracias por ayudarnos a mejorar el sistema.**
 
   - type: dropdown
     id: bug_type
