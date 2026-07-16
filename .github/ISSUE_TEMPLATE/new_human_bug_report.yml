@@ -29,12 +29,13 @@ body:
     id: bug_priority
     attributes:
       label: Prioridad
+      default: 2
       description: Seleccioná la prioridad que mejor represente el impacto del problema.
       options:
-        - 1 - Danger / Risk
-        - 2 - High priority
-        - 3 - Medium priority
-        - 4 - Low priority
+        - 1 Danger / Risk
+        - 2 High priority
+        - 3 Medium priority
+        - 4 Low priority
     validations:
       required: true
 
@@ -44,13 +45,13 @@ body:
       label: Tipo de bug
       description: Seleccioná la categoría que mejor represente el problema.
       options:
-        - Flujo / Links / UX
-        - Visual / Style / UI
-        - Performance / Delay
-        - Crash / Freeze
-        - Almacenamiento / Datos
-        - Seguridad / Permisos
-        - Otros
+        - 🔀 Flujo / Links / UX
+        - 🎨 Visual / Style / UI
+        - ⚡ Performance / Delay
+        - 💥 Crash / Freeze
+        - 💾 Almacenamiento / Datos
+        - 🔒 Seguridad / Permisos
+        - 🧩 Otros
     validations:
       required: true
 
